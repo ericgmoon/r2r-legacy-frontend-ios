@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabbarViewController" customModule="Race_to_Raise" customModuleProvider="target">
+            <connections>
+                <outlet property="homeBTN" destination="WSN-ch-nTI" id="Glr-D2-gYg"/>
+                <outlet property="homeImg" destination="gNg-hX-geW" id="ych-4L-6ag"/>
+                <outlet property="profileBTN" destination="MFZ-dh-0Vb" id="fgV-nQ-S64"/>
+                <outlet property="profileImg" destination="rU9-b3-Ojw" id="w9y-ba-C0S"/>
+                <outlet property="settingBTN" destination="nJO-dF-Bv3" id="7aD-T2-k0l"/>
+                <outlet property="settingImg" destination="pNa-QW-W3B" id="zmK-Sy-sHZ"/>
+                <outlet property="tabbarBgView" destination="RFr-vu-TSN" id="2V0-q5-AH8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RFr-vu-TSN">
+                    <rect key="frame" x="0.0" y="4" width="375" height="116"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="gNg-hX-geW">
+                            <rect key="frame" x="54" y="35" width="22" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="PQI-oB-yif"/>
+                                <constraint firstAttribute="width" constant="22" id="eaf-QR-yAW"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFZ-dh-0Vb">
+                            <rect key="frame" x="132.5" y="4" width="110" height="108"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                            <state key="normal" title="My Profile">
+                                <color key="titleColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="allTabBTNActions:" destination="-1" eventType="touchUpInside" id="vOG-gb-fef"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="rU9-b3-Ojw">
+                            <rect key="frame" x="176.5" y="35" width="22" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="22" id="0BZ-AV-PJi"/>
+                                <constraint firstAttribute="height" constant="22" id="KEz-kV-Bga"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJO-dF-Bv3">
+                            <rect key="frame" x="255.5" y="4" width="109.5" height="108"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                            <state key="normal" title="Leaderboard">
+                                <color key="titleColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="allTabBTNActions:" destination="-1" eventType="touchUpInside" id="4qt-cI-sQh"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leaderboard" translatesAutoresizingMaskIntoConstraints="NO" id="pNa-QW-W3B">
+                            <rect key="frame" x="299" y="35" width="22" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="22" id="Zab-cC-SSX"/>
+                                <constraint firstAttribute="height" constant="22" id="wcL-qK-HMv"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSN-ch-nTI">
+                            <rect key="frame" x="10" y="4" width="109.5" height="108"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                            <state key="normal" title="Home">
+                                <color key="titleColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="allTabBTNActions:" destination="-1" eventType="touchUpInside" id="GG5-sI-nwU"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.30588235294117649" green="0.69411764705882351" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="rU9-b3-Ojw" firstAttribute="centerY" secondItem="MFZ-dh-0Vb" secondAttribute="centerY" constant="-12" id="0l3-R0-Yww"/>
+                        <constraint firstItem="nJO-dF-Bv3" firstAttribute="leading" secondItem="MFZ-dh-0Vb" secondAttribute="trailing" constant="13" id="2DC-mQ-nZK"/>
+                        <constraint firstAttribute="bottom" secondItem="WSN-ch-nTI" secondAttribute="bottom" constant="4" id="3X4-Hi-KHP"/>
+                        <constraint firstItem="WSN-ch-nTI" firstAttribute="leading" secondItem="RFr-vu-TSN" secondAttribute="leading" constant="10" id="6fL-Kx-FA5"/>
+                        <constraint firstItem="gNg-hX-geW" firstAttribute="centerX" secondItem="WSN-ch-nTI" secondAttribute="centerX" id="7hZ-y3-C6t"/>
+                        <constraint firstAttribute="bottom" secondItem="nJO-dF-Bv3" secondAttribute="bottom" constant="4" id="8Y1-jA-3rX"/>
+                        <constraint firstItem="MFZ-dh-0Vb" firstAttribute="width" secondItem="WSN-ch-nTI" secondAttribute="width" id="8hB-wb-ZP0"/>
+                        <constraint firstItem="pNa-QW-W3B" firstAttribute="centerY" secondItem="nJO-dF-Bv3" secondAttribute="centerY" constant="-12" id="Erm-rc-6lL"/>
+                        <constraint firstItem="MFZ-dh-0Vb" firstAttribute="top" secondItem="RFr-vu-TSN" secondAttribute="top" constant="4" id="G6d-Zw-RTz"/>
+                        <constraint firstItem="pNa-QW-W3B" firstAttribute="centerX" secondItem="nJO-dF-Bv3" secondAttribute="centerX" id="Mkx-lB-8e1"/>
+                        <constraint firstItem="gNg-hX-geW" firstAttribute="centerY" secondItem="WSN-ch-nTI" secondAttribute="centerY" constant="-12" id="RGO-Se-IoY"/>
+                        <constraint firstItem="MFZ-dh-0Vb" firstAttribute="leading" secondItem="WSN-ch-nTI" secondAttribute="trailing" constant="13" id="RkP-R8-bpg"/>
+                        <constraint firstItem="WSN-ch-nTI" firstAttribute="top" secondItem="RFr-vu-TSN" secondAttribute="top" constant="4" id="Z54-X1-fBH"/>
+                        <constraint firstAttribute="bottom" secondItem="MFZ-dh-0Vb" secondAttribute="bottom" constant="4" id="cnz-hG-o8M"/>
+                        <constraint firstItem="nJO-dF-Bv3" firstAttribute="width" secondItem="WSN-ch-nTI" secondAttribute="width" id="i7Q-mZ-91w"/>
+                        <constraint firstItem="rU9-b3-Ojw" firstAttribute="centerX" secondItem="MFZ-dh-0Vb" secondAttribute="centerX" id="kZj-uF-JIx"/>
+                        <constraint firstItem="nJO-dF-Bv3" firstAttribute="top" secondItem="RFr-vu-TSN" secondAttribute="top" constant="4" id="tmj-ze-fQi"/>
+                        <constraint firstAttribute="trailing" secondItem="nJO-dF-Bv3" secondAttribute="trailing" constant="10" id="tyq-Jp-TX3"/>
+                        <constraint firstAttribute="bottom" secondItem="WSN-ch-nTI" secondAttribute="bottom" constant="4" id="udB-Fj-i0r"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="RFr-vu-TSN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="4" id="Bp9-Qv-tZ3"/>
+                <constraint firstItem="RFr-vu-TSN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fcH-fs-2nj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RFr-vu-TSN" secondAttribute="trailing" id="fe4-Y4-Wc3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="RFr-vu-TSN" secondAttribute="bottom" constant="-10" id="xI3-aN-Ysf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="60" y="-118.74062968515743"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home" width="89" height="82"/>
+        <image name="leaderboard" width="76" height="76"/>
+        <image name="profile" width="80" height="80"/>
+    </resources>
+</document>
